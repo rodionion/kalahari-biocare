@@ -129,21 +129,19 @@ class footer extends HTMLElement {
 
                 <ul>
 
-                    <li><a class="footerMenu-link" href="https://kalaharibiocare.com/">Home</a></li>
+                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/">Home</a></li>
 
-                    <li><a class="footerMenu-link" href="https://kalaharibiocare.com/about">About</a></li>
+                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/about">About</a></li>
 
-                    <li><a class="footerMenu-link" href="https://kalaharibiocare.com/contact">Contact</a></li>
+                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/contact">Contact</a></li>
 
-                    <li><a class="footerMenu-link" href="https://kalaharibiocare.com/products">Products</a></li>
+                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/products">Products</a></li>
                 
-                    <li><a class="footerMenu-link" href="https://kalaharibiocare.com/services">Services</a></li>
+                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/blog">Blog</a></li>
 
-                    <li><a class="footerMenu-link" href="https://kalaharibiocare.com/blog">Blog</a></li>
+                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/privacy">Privacy</a></li>
 
-                    <li><a class="footerMenu-link" href="https://kalaharibiocare.com/privacy">Privacy</a></li>
-
-                    <li><a class="footerMenu-link" href="https://kalaharibiocare.com/terms">Terms</a></li>
+                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/terms">Terms</a></li>
 
                 </ul>
             
