@@ -1,0 +1,21 @@
+#productsSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#products {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 36px;
+}
+
+.product {
+    max-width: 300px;
+}
+
+#products-button {
+    margin-left: auto;
+}
+
