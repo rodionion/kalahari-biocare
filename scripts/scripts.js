@@ -56,13 +56,12 @@ class header extends HTMLElement {
 
                 <ul>
 
-                    <li><a class="headerMenu-link" href="https://kalaharibiocare.com/appointment">Products</a></li>
+                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare.com/products-personal.html">Products (Personal)</a></li>
+                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare.com/products-wholesale.html">Products (Wholesale)</a></li>
+                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare.com/products-by-package.html">Products (By Package)</a></li>
+                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare.com/products-by-type.html">Products (by Type)</a></li>
 
-                    <li><a class="headerMenu-link" href="https://kalaharibiocare.com/contact">Contact</a></li>
-
-                    <li><a class="headerMenu-link" href="https://kalaharibiocare.com/about">About</a></li>
-
-                    <li><a class="headerMenu-link" href="https://kalaharibiocare.com/blog">Blog</a></li>
+                    
             
                 </ul>
             
@@ -72,6 +71,16 @@ class header extends HTMLElement {
         `;
     }
 }
+
+/*
+
+<li><a class="headerMenu-link" href="https://kalaharibiocare.com/contact">Contact</a></li>
+
+                    <li><a class="headerMenu-link" href="https://kalaharibiocare.com/about">About</a></li>
+
+                    <li><a class="headerMenu-link" href="https://kalaharibiocare.com/blog">Blog</a></li>
+
+*/
 
 customElements.define("header-component", header);
 

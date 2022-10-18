@@ -1,0 +1,44 @@
+#product {
+    display: flex;
+    gap: 36px;
+}
+
+#product-imagesContainer {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#product-mainImage {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#product-imageThumbnailsContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.product-imageThumbnail {
+    width: 70px;
+}
+
+#product-info {
+    flex-basis: 50%;
+}
+
+#product-packagesContainer {
+    padding-bottom: 22px;
+}
+
+.product-package {
+    display: inline;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.product-package:first-of-type {
+    background-color: rgb(168, 168, 168);
+}
+

@@ -114,6 +114,8 @@ a {
 
 a {
 	color: var(--primary-color-dark);
+    color: black;
+    text-decoration: none;
 }
 
 em {
