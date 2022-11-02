@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
 /* Variables  */
 
 :root {
@@ -39,20 +45,13 @@
     }
 }
 
-body {
-	margin: 0;
-    padding: 0;
-    /* max-width: 1000px; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-}
+
 
 header, 
 section, 
 footer {
 	padding-left: var(--horizontal-padding);
 	padding-right: var(--horizontal-padding);
-    /* flex-basis: 100%; */
 }
 
 section, 
@@ -129,22 +128,23 @@ em {
 */
 
 button {
-    padding: 0;
     
     /* transition: var(--transition);
     border-radius: var(--border-radius); */
 
     border: 1px solid black;
+
+	margin-top: var(--vertical-padding);
 }
 
 button a {
+	background-color: var(--primary-color-dark);
     display: inline-block;
     
-	min-width: 150px;
+	min-width: 200px;
 
-    padding: 8px;
+    padding: 16px;
 
-	background-color: var(--primary-color-dark);
     border: none;
 	
     font-family: 'Montserrat';
@@ -181,7 +181,7 @@ button:hover {
 }
 
 .socialMedia {
-	width: 40px;
+	width: 50px;
 	padding: 0 8px 0 8px;
 	transition: var(--transition);
 }

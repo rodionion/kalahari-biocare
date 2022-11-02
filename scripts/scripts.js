@@ -56,10 +56,13 @@ class header extends HTMLElement {
 
                 <ul>
 
-                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/products-personal.html">Products (Personal)</a></li>
-                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/products-wholesale.html">Products (Wholesale)</a></li>
-                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/products-by-package.html">Products (By Package)</a></li>
-                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/products-by-type.html">Products (by Type)</a></li>
+                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/products.html">Products</a></li>
+
+                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/contact.html">Contact</a></li>
+
+                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/about.html">About</a></li>
+
+                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/blog.html">Blog</a></li>
 
                     
             

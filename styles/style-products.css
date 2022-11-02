@@ -13,10 +13,10 @@
 }
 
 .product {
-    width: 250px;
+    width: 300px;
 }
 
-#products-button {
-    margin-left: auto;
-}
 
+h1 {
+    margin-bottom: var(--vertical-padding);
+}
