@@ -37,7 +37,7 @@ class header extends HTMLElement {
 
             <!-- Header Logo -->
 
-            <a href="https://drwatsondental.com">
+            <a href="https://kalahari-biocare.com">
                 <img id="logo" src="${urlPrefix}graphics/logo.png" alt="kalahari-biocare-logo"></a>
 
             <!-- Header hamburger icon -->

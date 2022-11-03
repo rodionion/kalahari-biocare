@@ -20,3 +20,7 @@
 h1 {
     margin-bottom: var(--vertical-padding);
 }
+
+#products-button {
+    margin-top: var(--vertical-padding);
+}
