@@ -1,0 +1,26 @@
+#productsSection {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.productContainer {
+    display: grid;
+    justify-items: center;
+}
+
+.productImage {
+    width: 250px;
+}
+
+h3 {
+    text-align: center;
+}

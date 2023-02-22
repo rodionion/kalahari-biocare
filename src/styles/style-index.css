@@ -1,0 +1,139 @@
+section {
+    border: 1px solid black;
+    clear: both;
+}
+
+/*	
+	------------------------------
+	Hero Section 
+	------------------------------
+*/
+
+#heroSection {
+    height: calc(100vh - var(--header-height) - var(--vertical-padding) * 2);
+}
+
+#heroSection-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+#heroSection-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 60%;
+}
+
+#heroSection-imageContainer {
+    flex-basis: 40%;
+}
+
+/*	
+	------------------------------
+	Explanation Section 
+	------------------------------
+*/
+
+#explanation-imagesContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.explanation-image {
+    width: 200px;
+}
+
+/*	
+	------------------------------
+    Reviews Section
+	------------------------------
+*/
+
+#reviewsContainer {
+    display: flex;
+    gap: 32px;
+}
+
+.review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-photo {
+    max-width: 100px;
+}
+
+/*	
+	------------------------------
+    Features Section
+	------------------------------
+*/
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+
+.feature-imageContainer {
+    flex-basis: 20%;
+}
+
+.feature-info {
+    flex-basis: 80%;
+}
+
+/*	
+	------------------------------
+    Certifications Section
+	------------------------------
+*/
+
+#certifications {
+    display: flex;
+    gap: 16px;
+    justify-content: space-evenly;
+}
+
+.certification-imageContainer {
+    flex-basis: 100px;
+}
+
+.certification-image {
+    width: 100%;
+}
+
+/*	
+	------------------------------
+    Products Showcase Section
+	------------------------------
+*/
+
+#productsContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product {
+    max-width: 300px;
+}
+
+#productsSection-button {
+    /* position: absolute; */
+    /* right:  0; */
+    /* right: 10px; */
+    /* right: 0; */
+    /* left: 0; */
+    /* float: right; */
+    float: right;
+}
+
+#productsSection-button + p {
+    clear: both;
+}
