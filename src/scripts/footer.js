@@ -42,19 +42,19 @@ class footer extends HTMLElement {
 
                 <ul>
 
-                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/">Home</a></li>
+                    <li><a class="footerMenu-link" href="./index.html">Home</a></li>
 
-                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/about">About</a></li>
+                    <li><a class="footerMenu-link" href="./about.html">About</a></li>
 
-                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/contact">Contact</a></li>
+                    <li><a class="footerMenu-link" href="./contact.html">Contact</a></li>
 
-                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/products">Products</a></li>
+                    <li><a class="footerMenu-link" href="./products.html">Products</a></li>
                 
-                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/blog">Blog</a></li>
+                    <li><a class="footerMenu-link" href="./blog.html">Blog</a></li>
 
-                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/privacy">Privacy</a></li>
+                    <li><a class="footerMenu-link" href="./privacy.html">Privacy</a></li>
 
-                    <li><a class="footerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/terms">Terms</a></li>
+                    <li><a class="footerMenu-link" href="./terms.html">Terms</a></li>
 
                 </ul>
             

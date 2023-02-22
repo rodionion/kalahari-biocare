@@ -24,7 +24,7 @@ class header extends HTMLElement {
 
             <!-- Header Logo -->
 
-            <a href="https://kalahari-biocare.com">
+            <a href="./index.html">
                 <img id="logo" src="./logo.png" alt="kalahari-biocare-logo"></a>
 
             <!-- Header hamburger icon -->
@@ -43,13 +43,13 @@ class header extends HTMLElement {
 
                 <ul>
 
-                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/products.html">Products</a></li>
+                    <li><a class="headerMenu-link" href="./products.html">Products</a></li>
 
-                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/contact.html">Contact</a></li>
+                    <li><a class="headerMenu-link" href="./contact.html">Contact</a></li>
 
-                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/about.html">About</a></li>
+                    <li><a class="headerMenu-link" href="./about.html">About</a></li>
 
-                    <li><a class="headerMenu-link" href="https://rodionlee.github.io/kalahari-biocare/blog.html">Blog</a></li>
+                    <li><a class="headerMenu-link" href="./blog.html">Blog</a></li>
 
                     
             
