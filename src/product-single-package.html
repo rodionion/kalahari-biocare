@@ -12,59 +12,44 @@
 
 <body>
 
+    <!-- Header  -->
+    <header-component></header-component>
 
-<!--------------------------------
-	Header 
---------------------------------->
-
-<header-component></header-component>
-
-<section id="productSection">
-
-    <h1>Product (Single Package)</h1>
-
-    <div id="product">
-
-        <div id="product-imagesContainer">
-            
-            <img src="./graphics/image-icon.svg" alt="" id="product-mainImage">
-
-            <div id="product-imageThumbnailsContainer">
-
-                <img src="./graphics/image-icon.svg" alt="" class="product-imageThumbnail">
-                <img src="./graphics/image-icon.svg" alt="" class="product-imageThumbnail">
-                <img src="./graphics/image-icon.svg" alt="" class="product-imageThumbnail">
-                <img src="./graphics/image-icon.svg" alt="" class="product-imageThumbnail">
-                
+    <section id="productSection">
+        <div class="productsSpecificBreadcrumbsContainer">
+            <a class="productsSpecificBreadcrumbsLink" href="./products.html">All Products</a>
+            <span> > </span>
+            <a class="productsSpecificBreadcrumbsLink" href="./products-personal.html">Wholesale / Personal Products</a>
+            <span> > </span>
+            <a class="productsSpecificBreadcrumbsLink" href="">This Product</a>
+        </div>
+        <h1>Product (Single Package)</h1>
+        <div id="product">
+            <div id="product-imagesContainer">
+                <img src="./graphics/image-icon.svg" alt="" id="product-mainImage">
+                <div id="product-imageThumbnailsContainer">
+                    <img src="./graphics/image-icon.svg" alt="" class="product-imageThumbnail">
+                    <img src="./graphics/image-icon.svg" alt="" class="product-imageThumbnail">
+                    <img src="./graphics/image-icon.svg" alt="" class="product-imageThumbnail">
+                    <img src="./graphics/image-icon.svg" alt="" class="product-imageThumbnail">
+                </div>
             </div>
+            <div id="product-info">
+                <h3 class="product-name">Hair Oil</h3>
+                <p class="product-description">
+                    Ipsa fugiat, nam illo vitae eos eius ullam unde quae eveniet perferendis tempore. Cupiditate molestiae odit accusamus? Laborum consequuntur eius pariatur exercitationem?<br><br>
+                    Ipsa fugiat, nam illo vitae eos eius ullam unde quae eveniet perferendis tempore. Cupiditate molestiae odit accusamus? Laborum consequuntur eius pariatur exercitationem?<br><br>
+                    Package: 50 ml.
+                </p>
+                <button id="product-button">
+                    <a href="./contact.html">Contact For Pricing</a>
+                </button>
+            </div>
+        </div>  
+    </section>
 
-        </div>
-
-        <div id="product-info">
-    
-            <h3 class="product-name">Hair Oil</h3>
-            <p class="product-description">
-                Ipsa fugiat, nam illo vitae eos eius ullam unde quae eveniet perferendis tempore. Cupiditate molestiae odit accusamus? Laborum consequuntur eius pariatur exercitationem?<br><br>
-                Ipsa fugiat, nam illo vitae eos eius ullam unde quae eveniet perferendis tempore. Cupiditate molestiae odit accusamus? Laborum consequuntur eius pariatur exercitationem?<br><br>
-                Package: 50 ml.
-            </p>
-
-
-            <button id="product-button">
-                <a>Contact For Pricing</a>
-            </button>
-            
-        </div>
-
-    </div>  
-
-</section>
-
-<!--------------------------------
-	Footer 
---------------------------------->
-
-<footer-component></footer-component>
+    <!-- Footer  -->
+    <footer-component></footer-component>
     
 </body>
 </html>

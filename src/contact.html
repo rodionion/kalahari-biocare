@@ -13,88 +13,45 @@
 
 <body>
 
-<!--------------------------------
-	Header 
---------------------------------->
+    <!-- Header  -->
+    <header-component></header-component>
 
-<header-component></header-component>
-
-
-
-<section>
-
-    <h1>Contact Us</h1>
-
-    <div id="contactsContainer">
-
-        <p><a class="footer-contactText" href="tel:+260977521516"><img class="contactIcon" src="./graphics/phone.png"> +260 977521516</a></p>
-
-        <p><img class="contactIcon" src="./graphics/map.png">PO Box 51386, Ridgeway, Lusaka, Zambia</p>
-
-        <div class="socialMediaIconsContainer">
-
-            <a href="https://wa.me/260977521516/"><img class="socialMedia" src="./graphics/whatsapp.png"></a>
-    
-            <a href="https://facebook.com/kalaharibiocare/"><img class="socialMedia" src="./graphics/facebook.png"></a>
-    
-            <a href="https://instagram.com/kalaharibiocare/"><img class="socialMedia" src="./graphics/instagram.png"></a>
-
+    <section>
+        <h1>Contact Us</h1>
+        <div id="contactsContainer">
+            <p><a class="footer-contactText" href="tel:+260977521516"><img class="contactIcon" src="./graphics/phone.png"> +260 977521516</a></p>
+            <p><img class="contactIcon" src="./graphics/map.png">PO Box 51386, Ridgeway, Lusaka, Zambia</p>
+            <div class="socialMediaIconsContainer">
+                <a href="https://wa.me/260977521516/"><img class="socialMedia" src="./graphics/whatsapp.png"></a>
+                <a href="https://facebook.com/kalaharibiocare/"><img class="socialMedia" src="./graphics/facebook.png"></a>
+                <a href="https://instagram.com/kalaharibiocare/"><img class="socialMedia" src="./graphics/instagram.png"></a>
+            </div>
         </div>
+        <h3>Send Us A Message</h3>
+        <form action="" class="contactForm">
+            <div class="form-inputContainer">
+                <label for="name">Name:</label>
+                <input class="input-field" type="text" name="name" id="name">
+            </div>
+            <div class="form-inputContainer">
+                <label for="email">Email:</label>
+                <input class="input-field" type="email" name="email" id="email">
+            </div>
+            <div class="form-inputContainer">
+                <label for="phone">Phone:</label>
+                <input class="input-field" type="tel" name="phone" id="phone">
+            </div>
+            <div class="form-inputContainer">
+                <label for="message">Your Message: </label>
+                <textarea class="input-field" id="form-textArea" name="message" id="message" rows="10"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-    </div>
+    <!-- Footer  -->
+    <footer-component></footer-component>
 
-    <h3>Send Us A Message</h3>
-
-    <form action="" class="contactForm">
-
-        <div class="form-inputContainer">
-
-            <label for="name">Name:</label>
-
-            <input class="input-field" type="text" name="name" id="name">
-        
-        </div>
-
-        <div class="form-inputContainer">
-
-            <label for="email">Email:</label>
-
-            <input class="input-field" type="email" name="email" id="email">
-        
-        </div>
-
-        <div class="form-inputContainer">
-
-            <label for="phone">Phone:</label>
-
-            <input class="input-field" type="tel" name="phone" id="phone">
-        
-        </div>
-
-        <div class="form-inputContainer">
-
-            <label for="message">Your Message: </label>
-
-            <textarea class="input-field" id="form-textArea" name="message" id="message" rows="10"></textarea>
-            
-        </div>
-
-        <button type="submit">Send Message</button>
-
-    </form>
-
-</section>
-
-
-
-<!--------------------------------
-	Footer 
---------------------------------->
-
-<footer-component></footer-component>
-
-
-    
 </body>
 
 </html>

@@ -1,7 +1,19 @@
 #productsSpecificSection {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productsSpecificH1 {
+    width: 100%;
+}
+
+.productsSpecificBreadcrumbsContainer {
+    align-self: start;
+}
+
+.productsSpecificBreadcrumbsLink {
+    display: inline-block;
 }
 
 #productsSpecific {
@@ -33,4 +45,5 @@
 
 #productsSpecific-button {
     margin-top: var(--vertical-padding);
+    width: 300px;
 }
