@@ -13,7 +13,11 @@
 	--box-shadow: 2px 2px 14px rgb(56, 56, 56);
 
     --horizontal-padding: 7vw;
-	--vertical-padding: 7vh;
+	--vertical-padding: min(7vh, var(--big-gap));
+
+	--small-gap: 8px;
+	--medium-gap: 16px;
+	--big-gap: 32px;
     
 	/* --transition: 0.2s ease-out;
 	--transform-scale: 1.1;
@@ -29,26 +33,23 @@
 	--primary-color: rgb(255, 255, 255);;
 	--primary-color-light: rgb(255, 255, 255);
 	--primary-color-dark: rgb(255, 255, 255);
-	--gradient: 33deg, var(--primary-color-light), 80%, var(--primary-color-light);
+	/* --gradient: 33deg, var(--primary-color-light), 80%, var(--primary-color-light); */
     
     font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
     :root {
-        --vertical-padding: 10vh;
         font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     :root {
-        --horizontal-padding: calc((100vw - 1200px) / 2);
-	    --vertical-padding: 10vh;
+		--max-content-width: 900px;
+        --horizontal-padding: calc((100vw - var(--max-content-width)) / 2);
     }
 }
-
-
 
 header, 
 section, 
@@ -63,12 +64,15 @@ footer {
     padding-bottom: var(--vertical-padding);
 }
 
+h1 {
+	margin-bottom: var(--big-gap);
+} 
 
-/*	
-	------------------------------
-	Global Typography 
-	------------------------------
-*/
+p {
+	margin-bottom: var(--medium-gap);
+}
+
+/* Global Typography  */
 
 h1, 
 h2, 
@@ -110,7 +114,7 @@ a {
 	text-align: center;
 	font-size: 1.2rem;
 	font-style: italic;
-	padding-bottom: 16px;
+	padding-bottom: var(--medium-gap);
 }
 
 
@@ -124,11 +128,7 @@ em {
 	font-weight: 600;
 }
 
-/*	
-	------------------------------
-	Global Button 
-	------------------------------
-*/
+/* Global Button  */
 
 button {
     
@@ -139,10 +139,10 @@ button {
 
     border: 1px solid black;
 
-	padding: 16px;
+	padding: var(--medium-gap);
 
 	min-width: 200px;
-	min-height: 70px;
+	height: 70px;
 }
 
 button a {
@@ -169,13 +169,7 @@ button:hover {
     */
 }
 
-
-
-/*	
-	------------------------------
-	Contact and Social Media Icons 
-	------------------------------
-*/
+/* Contact and Social Media Icons  */
 
 .contactIcon {
 	width: 18px;
@@ -188,7 +182,7 @@ button:hover {
 
 .socialMedia {
 	width: 50px;
-	padding: 0 8px 0 8px;
+	padding: 0 var(--small-gap) 0 var(--small-gap);
 	transition: var(--transition);
 }
 
@@ -196,11 +190,7 @@ button:hover {
 	transform: var(--transform);
 }
 
-/*	
-	------------------------------
-	Header 
-	------------------------------
-*/
+/* Header  */
 
 header {
 	position: sticky;
@@ -358,34 +348,22 @@ header {
     }
 }
 
-
-/*	
-	------------------------------
-	Footer 
-	------------------------------
-*/
-
+/* Footer  */
 
 footer {
 	text-align: center;
 	/* background-image: linear-gradient(#ede7f6,#bbb5c3); */
     border: 1px solid black;
-}
 
-#footer {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	gap: 16px;
+	gap: var(--medium-gap);
 }
 
 #footer-contacts {
     width: 100%;
-}
-
-#footer-contacts > * {
-    padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -424,7 +402,7 @@ footer {
 	#footerMenu ul {
 		text-align: center;
 		flex-wrap: wrap;
-		gap: 16px;
+		gap: var(--medium-gap);
 		justify-content: space-around;
 	}
 
@@ -450,10 +428,6 @@ footer {
 /*!********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style-contact.css ***!
   \********************************************************************************/
-h1 {
-    margin-bottom: 32px;
-}
-
 #contactsContainer {
     display: grid;
     grid-template-columns: 1fr;
@@ -464,7 +438,6 @@ h1 {
 
 h3 {
     text-align: center;
-    margin: 32px;
 }
 
 .contactForm {
@@ -472,7 +445,7 @@ h3 {
     grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
-    gap: 32px;
+    gap: var(--big-gap);
 }
 
 
@@ -536,62 +509,62 @@ h3 {
 }
 
 
-/*!**************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style-products-page.css ***!
-  \**************************************************************************************/
-#productsSection {
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style-products-general.css ***!
+  \*****************************************************************************************/
+#productsGeneralSection {
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.productsContainer {
+.productsGeneralContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     justify-items: center;
 }
 
-.productContainer {
+.productGeneralContainer {
     display: grid;
     justify-items: center;
 }
 
-.productImage {
+.productGeneralImage {
     width: 250px;
 }
 
 h3 {
     text-align: center;
 }
-/*!*********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style-products.css ***!
-  \*********************************************************************************/
-#productsSection {
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style-products-specific.css ***!
+  \******************************************************************************************/
+#productsSpecificSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#products {
-    flex-basis: 100%;
+#productsSpecific {
+
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 36px;
 }
 
-.product {
+.productSpecific {
     width: 300px;
 }
 
-
-h1 {
+.productsH1 {
     margin-bottom: var(--vertical-padding);
 }
 
-#products-button {
+#productsSpecific-button {
     margin-top: var(--vertical-padding);
 }
 /*!******************************************************************************!*\
@@ -602,11 +575,7 @@ section {
     clear: both;
 }
 
-/*	
-	------------------------------
-	Hero Section 
-	------------------------------
-*/
+/* Hero Section  */
 
 #heroSection {
     height: calc(100vh - var(--header-height) - var(--vertical-padding) * 2);
@@ -616,14 +585,13 @@ section {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 36px;
 }
 
 #heroSection-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* gap: var(--medium-gap); */
     flex-basis: 60%;
 }
 
@@ -631,11 +599,7 @@ section {
     flex-basis: 40%;
 }
 
-/*	
-	------------------------------
-	Explanation Section 
-	------------------------------
-*/
+/* Explanation Section  */
 
 #explanation-imagesContainer {
     display: flex;
@@ -646,37 +610,30 @@ section {
     width: 200px;
 }
 
-/*	
-	------------------------------
-    Reviews Section
-	------------------------------
-*/
+/* Reviews Section */
 
 #reviewsContainer {
     display: flex;
-    gap: 32px;
+    gap: var(--big-gap);
 }
 
 .review {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: var(--medium-gap);
 }
 
 .review-photo {
     max-width: 100px;
 }
 
-/*	
-	------------------------------
-    Features Section
-	------------------------------
-*/
+/* Features Section */
 
 .feature {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: var(--big-gap);
 }
 
 
@@ -688,15 +645,12 @@ section {
     flex-basis: 80%;
 }
 
-/*	
-	------------------------------
-    Certifications Section
-	------------------------------
-*/
+
+/* Certifications Section */
 
 #certifications {
     display: flex;
-    gap: 16px;
+    gap: var(--medium-gap);
     justify-content: space-evenly;
 }
 
@@ -708,11 +662,7 @@ section {
     width: 100%;
 }
 
-/*	
-	------------------------------
-    Products Showcase Section
-	------------------------------
-*/
+/* Products Showcase Section */
 
 #productsContainer {
     display: flex;
@@ -721,6 +671,19 @@ section {
 
 .product {
     max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: var(--medium-gap);
+}
+
+.product-image {
+    width: 200px;
+}
+
+.product-name {
+    width: 100%;
 }
 
 #productsSection-button {
@@ -730,6 +693,7 @@ section {
     /* right: 0; */
     /* left: 0; */
     /* float: right; */
+    margin-top: var(--medium-gap);
     float: right;
 }
 

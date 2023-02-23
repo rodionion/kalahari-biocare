@@ -1,0 +1,36 @@
+#productsSpecificSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#productsSpecific {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 36px;
+}
+
+.productSpecificContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--medium-gap);
+}
+
+.productSpecific {
+    width: 300px;
+}
+
+.productSpecific-image {
+    width: 200px;
+}
+
+.productsH1 {
+    margin-bottom: var(--vertical-padding);
+}
+
+#productsSpecific-button {
+    margin-top: var(--vertical-padding);
+}

@@ -1,23 +1,23 @@
-#productsSection {
+#productsGeneralSection {
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.productsContainer {
+.productsGeneralContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     justify-items: center;
 }
 
-.productContainer {
+.productGeneralContainer {
     display: grid;
     justify-items: center;
 }
 
-.productImage {
+.productGeneralImage {
     width: 250px;
 }
 

@@ -3,8 +3,8 @@ import "../styles/style-about.css";
 import "../styles/style-blog.css";
 import "../styles/style-contact.css";
 import "../styles/style-product.css";
-import "../styles/style-products-page.css";
-import "../styles/style-products.css";
+import "../styles/style-products-general.css";
+import "../styles/style-products-specific.css";
 import "../styles/style-index.css";
 import "../graphics/logo.png"
 

@@ -3,14 +3,10 @@ section {
     clear: both;
 }
 
-/*	
-	------------------------------
-	Hero Section 
-	------------------------------
-*/
+/* Hero Section  */
 
 #heroSection {
-    height: calc(100vh - var(--header-height) - var(--vertical-padding) * 2);
+    height: calc(100vh - var(--header-height));
 }
 
 #heroSection-container {
@@ -18,13 +14,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 36px;
 }
 
 #heroSection-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: var(--medium-gap);
     flex-basis: 60%;
 }
 
@@ -32,11 +28,7 @@ section {
     flex-basis: 40%;
 }
 
-/*	
-	------------------------------
-	Explanation Section 
-	------------------------------
-*/
+/* Explanation Section  */
 
 #explanation-imagesContainer {
     display: flex;
@@ -47,37 +39,30 @@ section {
     width: 200px;
 }
 
-/*	
-	------------------------------
-    Reviews Section
-	------------------------------
-*/
+/* Reviews Section */
 
 #reviewsContainer {
     display: flex;
-    gap: 32px;
+    gap: var(--big-gap);
 }
 
 .review {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: var(--medium-gap);
 }
 
 .review-photo {
     max-width: 100px;
 }
 
-/*	
-	------------------------------
-    Features Section
-	------------------------------
-*/
+/* Features Section */
 
 .feature {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: var(--big-gap);
 }
 
 
@@ -89,15 +74,12 @@ section {
     flex-basis: 80%;
 }
 
-/*	
-	------------------------------
-    Certifications Section
-	------------------------------
-*/
+
+/* Certifications Section */
 
 #certifications {
     display: flex;
-    gap: 16px;
+    gap: var(--medium-gap);
     justify-content: space-evenly;
 }
 
@@ -109,11 +91,7 @@ section {
     width: 100%;
 }
 
-/*	
-	------------------------------
-    Products Showcase Section
-	------------------------------
-*/
+/* Products Showcase Section */
 
 #productsContainer {
     display: flex;
@@ -122,6 +100,19 @@ section {
 
 .product {
     max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: var(--medium-gap);
+}
+
+.product-image {
+    width: 200px;
+}
+
+.product-name {
+    width: 100%;
 }
 
 #productsSection-button {
@@ -131,6 +122,7 @@ section {
     /* right: 0; */
     /* left: 0; */
     /* float: right; */
+    margin-top: var(--medium-gap);
     float: right;
 }
 
