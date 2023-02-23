@@ -433,7 +433,8 @@ footer {
     grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
-    gap: 32px;
+    gap: var(--small-gap);
+    margin-bottom: var(--big-gap);
 }
 
 h3 {
@@ -447,8 +448,6 @@ h3 {
     justify-items: center;
     gap: var(--big-gap);
 }
-
-
 
 .form-inputContainer {
     display: grid;
@@ -543,8 +542,20 @@ h3 {
   \******************************************************************************************/
 #productsSpecificSection {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productsSpecificH1 {
+    width: 100%;
+}
+
+.productsSpecificBreadcrumbsContainer {
+    align-self: start;
+}
+
+.productsSpecificBreadcrumbsLink {
+    display: inline-block;
 }
 
 #productsSpecific {
@@ -576,6 +587,7 @@ h3 {
 
 #productsSpecific-button {
     margin-top: var(--vertical-padding);
+    width: 300px;
 }
 /*!******************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style-index.css ***!
