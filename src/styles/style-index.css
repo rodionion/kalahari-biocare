@@ -114,13 +114,15 @@ section {
     gap: var(--medium-gap);
     justify-content: space-evenly;
 }
-
 .certification-imageContainer {
     flex-basis: 100px;
 }
-
 .certification-image {
     width: 100%;
+    transition: var(--transition);
+}
+.certification-image:hover {
+    transform: scale(1.1);
 }
 
 /* Products Showcase Section */

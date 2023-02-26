@@ -160,7 +160,7 @@ em {
 	color: var(--on-primary-color);
 	transform: var(--transform);
 	box-shadow: var(--box-shadow);
-	transform: scale(1.01);
+	transform: scale(1.05);
 }
 
 /* Contact and Social Media Icons  */
