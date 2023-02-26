@@ -17,6 +17,7 @@
 	--big-gap: 32px;
     
 	--transition: 0.2s ease-out;
+	--scale: scale(1.05);
 	/* --transform-scale: 1.1;
 	--transform: translateY(-12px); */
     
@@ -105,7 +106,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	text-align: center;
 }
 
@@ -361,14 +362,12 @@ header {
 
 footer {
 	text-align: center;
-	/* background-image: linear-gradient(#ede7f6,#bbb5c3); */
-    border: 1px solid black;
-
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	gap: var(--medium-gap);
+	background-color: var(--surface-variant-color);
 }
 
 #footer-contacts {
@@ -385,19 +384,16 @@ footer {
 	color: black;
 }
 
-#footerMenu {
-    flex-basis: 100%;
-}
-
 #footerMenu ul {
+	flex-basis: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0;
-	text-align: left;
+	justify-content: center;
+	gap: var(--medium-gap)
 }
 
 #footerMenu li {
-	width: 50%;
+	width: max-content;
 	list-style: none;
 }
 

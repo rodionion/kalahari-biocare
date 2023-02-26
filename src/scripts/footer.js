@@ -18,7 +18,6 @@ class footer extends HTMLElement {
         super();
     }
     connectedCallback() {
-
         this.innerHTML = `
         <footer>
             <div id="footer-contacts">

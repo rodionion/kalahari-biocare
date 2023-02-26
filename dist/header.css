@@ -20,6 +20,7 @@
 	--big-gap: 32px;
     
 	--transition: 0.2s ease-out;
+	--scale: scale(1.05);
 	/* --transform-scale: 1.1;
 	--transform: translateY(-12px); */
     
@@ -205,12 +206,17 @@ em {
 header {
 	position: fixed;
 	width: 100%;
-	top: 10vh;
+	top: calc(var(--header-height) * (-1));
 	height: var(--header-height);
 	z-index: 1;
 	padding-bottom: 0;
 	padding-top: 0;
 	background-color: var(--surface-variant-color);
+	transition: 1s ease-out;
+}
+
+.headerAfterScroll {
+	top: 0;
 }
 
 #logo {
@@ -607,7 +613,7 @@ section {
 /* Hero Section  */
 
 #heroSection {
-    height: calc(100vh - var(--header-height));
+    height: calc(100vh);
     /* background-image: url("../graphics/background-2.jpeg");
     background-position: right;
     background-repeat: no-repeat;
@@ -659,6 +665,12 @@ section {
     border-radius: var(--border-radius);
     padding: var(--medium-gap);
     gap: var(--medium-gap);
+    transition: var(--transition);
+}
+
+.review:hover {
+    transform: scale(1.01);
+    box-shadow: var(--box-shadow);
 }
 
 .review-photo {
@@ -667,21 +679,29 @@ section {
 
 /* Features Section */
 
+.featuresSection {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .feature {
     display: flex;
     align-items: center;
     gap: var(--big-gap);
+    width: 100vw;
 }
 
-
-.feature-imageContainer {
+/* .feature-imageContainer {
     flex-basis: 20%;
-}
+} */
 
 .feature-info {
-    flex-basis: 80%;
+    padding: 0 var(--horizontal-padding);
 }
 
+.feature:first-child {
+    background-image: url(sustainable.jpg);
+}
 
 /* Certifications Section */
 
