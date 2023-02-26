@@ -7,6 +7,10 @@ section {
 
 #heroSection {
     height: calc(100vh - var(--header-height));
+    /* background-image: url("../graphics/background-2.jpeg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 #heroSection-container {
@@ -50,6 +54,9 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: var(--surface-variant-color);
+    border-radius: var(--border-radius);
+    padding: var(--medium-gap);
     gap: var(--medium-gap);
 }
 

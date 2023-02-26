@@ -19,23 +19,38 @@
 	--medium-gap: 16px;
 	--big-gap: 32px;
     
-	/* --transition: 0.2s ease-out;
-	--transform-scale: 1.1;
+	--transition: 0.2s ease-out;
+	/* --transform-scale: 1.1;
 	--transform: translateY(-12px); */
     
-	--border-radius: 0;
+	--border-radius: 16px;
     
 	--hamburgerLine-start-position: 16px;
 	--hamburgerLine-end-position: 24px;
     
     --header-height: 10vh;
     
-	--primary-color: rgb(255, 255, 255);;
-	--primary-color-light: rgb(255, 255, 255);
-	--primary-color-dark: rgb(255, 255, 255);
-	/* --gradient: 33deg, var(--primary-color-light), 80%, var(--primary-color-light); */
-    
     font-size: 16px;
+}
+
+/* Branding (colors and fonts) */
+
+:root {
+	--primary-color: #96480d;
+	--on-primary-color: #ffffff;
+	--secondary-color: #765847;
+	--on-secondary-color: #ffffff;
+	--tertiary-color: #626033;
+	--on-tertiary-color: #ffffff;
+	--error-color: #ba1a1a;
+	--on-error-color: #ffffff;
+	--background-color: #fffbff;
+	--on-background-color: #201a17;
+	--surface-color: #fffbff;
+	--on-surface-color: #201a17;
+	--surface-variant-color: #f4ded4;
+	--main-font: "Poppins", Arial, Helvetica, sans-serif;
+	--accent-font: "Forum", Arial, Helvetica, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -49,6 +64,10 @@
 		--max-content-width: 900px;
         --horizontal-padding: calc((100vw - var(--max-content-width)) / 2);
     }
+}
+
+body {
+	background-color: var(--background-color);
 }
 
 header, 
@@ -78,16 +97,15 @@ h1,
 h2, 
 h3 {
 	color: black;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--accent-font);
 	line-height: 1.5;
 }
 
 h1 {
-	font-size: 1.7rem;
+	font-size: 3rem;
 	text-align: center;
 	font-weight: bold;
 }
-
 
 h2 {
 	font-size: 1.5rem;
@@ -105,7 +123,7 @@ label,
 ul, 
 ol, 
 a {
-	font-family:  Arial, Helvetica, sans-serif;
+	font-family: var(--main-font);
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -116,7 +134,6 @@ a {
 	font-style: italic;
 	padding-bottom: var(--medium-gap);
 }
-
 
 a {
 	color: var(--primary-color-dark);
@@ -130,43 +147,36 @@ em {
 
 /* Global Button  */
 
-button {
-    
-    /* transition: var(--transition);
-    border-radius: var(--border-radius); */
-
-	background-color: var(--primary-color-dark);
-
-    border: 1px solid black;
-
-	padding: var(--medium-gap);
-
+.button {
 	min-width: 200px;
 	height: 70px;
+	border: none;
+	background-color: none;
 }
 
-button a {
+.buttonLink {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    
-	width: 100%;
-	height: 100%;
-}
-
-button, button a {
-	text-align: center;
+	/* font-family: 'Montserrat'; */
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 22px;
-	color: black;
-	/* font-family: 'Montserrat'; */
+	width: 100%;
+	height: 100%;
+	padding: var(--medium-gap);
+	background-color: var(--primary-color);
+	color: var(--on-primary-color);
+	border-radius: var(--border-radius);
+	transition: var(--transition);
 }
 
-button:hover {
-	/* transform: var(--transform);
+.buttonLink:hover {
+	background-color: var(--tertiary-color);
+	color: var(--on-primary-color);
+	transform: var(--transform);
 	box-shadow: var(--box-shadow);
-    */
+	transform: scale(1.01);
 }
 
 /* Contact and Social Media Icons  */
@@ -193,17 +203,14 @@ button:hover {
 /* Header  */
 
 header {
-	position: sticky;
-	top: 0px;
+	position: fixed;
+	width: 100%;
+	top: 10vh;
 	height: var(--header-height);
 	z-index: 1;
 	padding-bottom: 0;
-	background-color: white;
-	/* box-shadow: var(--box-shadow); */
-
-    border-bottom: 1px solid;
-
 	padding-top: 0;
+	background-color: var(--surface-variant-color);
 }
 
 #logo {
@@ -241,16 +248,16 @@ header {
 	text-decoration: none;
 	color: black;
 	font-size: 18px; 
-	padding: 0 6px;
+	padding: 0 var(--small-gap);
 	line-height: 10vh;
 	transition: var(--transition);
 }
 
 .headerMenu-link:hover{
-	/* background-color: black; */
-	/* color: white; */
-	font-weight: 700;
-	text-decoration: underline;
+	background-color: var(--primary-color);
+	color: var(--on-primary-color);
+	/* font-weight: 700; */
+	/* text-decoration: underline; */
 }
 
 #hamburger {
@@ -601,6 +608,10 @@ section {
 
 #heroSection {
     height: calc(100vh - var(--header-height));
+    /* background-image: url("../graphics/background-2.jpeg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 #heroSection-container {
@@ -644,6 +655,9 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: var(--surface-variant-color);
+    border-radius: var(--border-radius);
+    padding: var(--medium-gap);
     gap: var(--medium-gap);
 }
 
