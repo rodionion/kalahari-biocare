@@ -50,41 +50,34 @@
 	--main-font: "Poppins", Arial, Helvetica, sans-serif;
 	--accent-font: "Forum", Arial, Helvetica, sans-serif;
 }
-
 @media screen and (min-width: 768px) {
     :root {
         font-size: 18px;
     }
 }
-
 @media screen and (min-width: 1280px) {
     :root {
 		--max-content-width: 900px;
         --horizontal-padding: calc((100vw - var(--max-content-width)) / 2);
     }
 }
-
 body {
 	background-color: var(--background-color);
 }
-
 header, 
 section, 
 footer {
 	padding-left: var(--horizontal-padding);
 	padding-right: var(--horizontal-padding);
 }
-
 section, 
 footer {
     padding-top: var(--vertical-padding);
     padding-bottom: var(--vertical-padding);
 }
-
 h1 {
 	margin-bottom: var(--big-gap);
 } 
-
 p {
 	margin-bottom: var(--medium-gap);
 }
@@ -92,29 +85,27 @@ p {
 /* Global Typography  */
 
 h1, 
-h2, 
-h3 {
+h2 {
 	color: black;
 	font-family: var(--accent-font);
 	line-height: 1.5;
 }
-
 h1 {
 	font-size: 3rem;
 	text-align: center;
 	font-weight: bold;
 }
-
 h2 {
 	font-size: 2.5rem;
 	text-align: center;
 }
-
 h3 {
+	font-family: var(--main-font);
 	font-size: 1.2rem;
 	text-align: left;
+	line-height: 1.5;
+	color: black;
 }
-
 p, 
 input, 
 label, 
@@ -125,20 +116,17 @@ a {
 	font-size: 1rem;
 	line-height: 1.5;
 }
-
 .headline {
 	text-align: center;
 	font-size: 1.2rem;
 	font-style: italic;
 	padding-bottom: var(--medium-gap);
 }
-
 a {
 	color: var(--primary-color-dark);
     color: black;
     text-decoration: none;
 }
-
 em {
 	font-weight: 600;
 }
@@ -151,7 +139,6 @@ em {
 	border: none;
 	background-color: none;
 }
-
 .buttonLink {
 	display: flex;
 	justify-content: center;
@@ -168,7 +155,6 @@ em {
 	border-radius: var(--border-radius);
 	transition: var(--transition);
 }
-
 .buttonLink:hover {
 	background-color: var(--tertiary-color);
 	color: var(--on-primary-color);
@@ -182,18 +168,15 @@ em {
 .contactIcon {
 	width: 18px;
 }
-
 .contactTextLink {
 	text-decoration: none;
 	color: black;
 }
-
 .socialMedia {
 	width: 50px;
 	padding: 0 var(--small-gap) 0 var(--small-gap);
 	transition: var(--transition);
 }
-
 .socialMedia:hover {
 	transform: var(--transform);
 }
@@ -211,27 +194,22 @@ header {
 	background-color: var(--surface-variant-color);
 	transition: 1s ease-out;
 }
-
 .headerAfterScroll {
 	top: 0;
 }
-
 #logo {
-	height: 8vh;
+	height: var(--header-height);
 	padding: 1vh 0;
 }
-
 #headerMenu {
 	max-height: 0;
 	overflow: hidden;
 	transition: var(--transition);
 }
-
 #headerMenu ul {
 	padding: 0;
 	margin: 0;
 }
-
 #headerMenu ul {
 	list-style: none;
 	margin: 0;
@@ -241,11 +219,9 @@ header {
 	flex-wrap: wrap;
 	text-align: center;
 }
-
 #headerMenu ul li {
 	width: 100%;
 }
-
 .headerMenu-link {
 	display: block;
 	text-decoration: none;
@@ -255,14 +231,12 @@ header {
 	line-height: 10vh;
 	transition: var(--transition);
 }
-
 .headerMenu-link:hover{
 	background-color: var(--primary-color);
 	color: var(--on-primary-color);
 	/* font-weight: 700; */
 	/* text-decoration: underline; */
 }
-
 #hamburger {
 	position: absolute;
 	margin: auto;
@@ -277,7 +251,6 @@ header {
 	/* Shift the icon to the right with a small offset the make the tappable area to the right */
 	right: calc(var(--horizontal-padding) - 12.5px);
 }
-
 .hamburgerLine {
     background: black;
     display: block;
@@ -292,25 +265,20 @@ header {
     width: 25px;
     transition: var(--transition);
 }
-
 #hamburgerLine-1 {
 	top: var(--hamburgerLine-start-position);
 }
-
 #hamburgerLine-2 {
 	top: 0;
 	bottom: 0;
 	margin: auto;
 }
-
 #hamburgerLine-3{
 	bottom: var(--hamburgerLine-start-position);
 }
-
 #hamburger-checkbox {
     display: none;
 }
-
 #hamburger-checkbox:checked ~ #headerMenu{
     max-height: none;
     height: 90vh;
@@ -324,7 +292,6 @@ header {
     background-color: white;
 
 }
-
 #hamburger-checkbox:checked ~ #hamburger #hamburgerLine-2 {
     background: transparent;
 }

@@ -48,7 +48,6 @@ section {
     display: flex;
     gap: var(--big-gap);
 }
-
 .review {
     display: flex;
     flex-wrap: wrap;
@@ -59,12 +58,10 @@ section {
     gap: var(--medium-gap);
     transition: var(--transition);
 }
-
 .review:hover {
     transform: scale(1.01);
     box-shadow: var(--box-shadow);
 }
-
 .review-photo {
     max-width: 100px;
 }
@@ -75,10 +72,6 @@ section {
     padding-left: 0;
     padding-right: 0;
 }
-
-
-
-
 .feature {
     display: flex;
     align-items: center;
@@ -88,7 +81,6 @@ section {
     background-position: top;
     background-size: cover;
 }
-
 .feature-info {
     height: 50vh;
     padding: var(--big-gap);
@@ -99,11 +91,9 @@ section {
     backdrop-filter: blur(2px) sepia(40%) brightness(0.7);
     color: white;
 }
-
 .feature-info h2 {
     color: white;
 }
-
 .feature:first-of-type {
     background-image: url("../graphics/belief-1.jpg");
 }
@@ -138,8 +128,8 @@ section {
 #productsContainer {
     display: flex;
     justify-content: space-evenly;
+    gap: var(--big-gap);
 }
-
 .product {
     max-width: 300px;
     display: flex;
@@ -147,27 +137,25 @@ section {
     align-items: start;
     flex-wrap: wrap;
     gap: var(--medium-gap);
+    background-color: var(--surface-variant-color);
+    border-radius: var(--border-radius);
+    padding: var(--medium-gap);
+    transition: var(--transition);
 }
-
+.product:hover {
+    transform: scale(1.01);
+    box-shadow: var(--box-shadow);
+}
 .product-image {
     width: 200px;
 }
-
 .product-name {
     width: 100%;
 }
-
 #productsSection-button {
-    /* position: absolute; */
-    /* right:  0; */
-    /* right: 10px; */
-    /* right: 0; */
-    /* left: 0; */
-    /* float: right; */
-    margin-top: var(--medium-gap);
+    margin-top: var(--big-gap);
     float: right;
 }
-
 #productsSection-button + p {
     clear: both;
 }
