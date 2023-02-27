@@ -18,8 +18,6 @@
     
 	--transition: 0.2s ease-out;
 	--scale: scale(1.05);
-	/* --transform-scale: 1.1;
-	--transform: translateY(-12px); */
     
 	--border-radius: 16px;
     
@@ -324,6 +322,8 @@ header {
         display: none;
     }
 }
+
+
 
 /* Footer  */
 

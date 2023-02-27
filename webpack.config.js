@@ -7,6 +7,7 @@ module.exports = {
 	entry: {
 		header: './src/scripts/header.js',
 		footer: './src/scripts/footer.js',
+		index: './src/scripts/index.js',
 	},
 	output: {
 		filename: '[name].bundle.js',

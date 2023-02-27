@@ -52,7 +52,6 @@ class header extends HTMLElement {
 
 customElements.define("header-component", header);
 
-
 // Reveal header on scroll down
 const headerElement = document.querySelector("header");
 document.addEventListener("scroll", 

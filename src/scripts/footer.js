@@ -39,7 +39,7 @@ class footer extends HTMLElement {
                 </ul>
             </nav>
             <p id="footer-copyright">
-                Copyright © ${currentYear} Kalahari Biocare
+                Copyright © ${currentYear} Kalahari BioСare
             </p>
         </footer>
         `;
