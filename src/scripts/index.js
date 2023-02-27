@@ -8,30 +8,27 @@ function revealWhatsAppButton() {
         floatingWhatsAppButton.classList.add("active");
         document.removeEventListener("scroll", revealWhatsAppButton);
     }
-}
+};
 
 // Reveal divs in Beliefs section
-
 function scrollTrigger(selector, options = {}) {
     let els = document.querySelectorAll(selector)
     els = Array.from(els)
     els.forEach(el => {
-      addObserver(el, options)
+        addObserver(el, options)
     })
-  }
-
-  function addObserver(el, options) {
+};
+function addObserver(el, options) {
     let observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
+        entries.forEach(entry => {
         if(entry.isIntersecting) {
-          entry.target.classList.add('active')
-          observer.unobserve(entry.target)
+            entry.target.classList.add('active')
+            observer.unobserve(entry.target)
         }
-      })
+        })
     }, options)
     observer.observe(el)
-  }
-
-  scrollTrigger('.feature', {
+};
+scrollTrigger('.feature', {
     rootMargin: '-200px'
-  })
+});
