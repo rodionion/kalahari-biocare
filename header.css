@@ -21,8 +21,6 @@
     
 	--transition: 0.2s ease-out;
 	--scale: scale(1.05);
-	/* --transform-scale: 1.1;
-	--transform: translateY(-12px); */
     
 	--border-radius: 16px;
     
@@ -53,41 +51,34 @@
 	--main-font: "Poppins", Arial, Helvetica, sans-serif;
 	--accent-font: "Forum", Arial, Helvetica, sans-serif;
 }
-
 @media screen and (min-width: 768px) {
     :root {
         font-size: 18px;
     }
 }
-
 @media screen and (min-width: 1280px) {
     :root {
 		--max-content-width: 900px;
         --horizontal-padding: calc((100vw - var(--max-content-width)) / 2);
     }
 }
-
 body {
 	background-color: var(--background-color);
 }
-
 header, 
 section, 
 footer {
 	padding-left: var(--horizontal-padding);
 	padding-right: var(--horizontal-padding);
 }
-
 section, 
 footer {
     padding-top: var(--vertical-padding);
     padding-bottom: var(--vertical-padding);
 }
-
 h1 {
 	margin-bottom: var(--big-gap);
 } 
-
 p {
 	margin-bottom: var(--medium-gap);
 }
@@ -95,29 +86,27 @@ p {
 /* Global Typography  */
 
 h1, 
-h2, 
-h3 {
+h2 {
 	color: black;
 	font-family: var(--accent-font);
 	line-height: 1.5;
 }
-
 h1 {
 	font-size: 3rem;
 	text-align: center;
 	font-weight: bold;
 }
-
 h2 {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	text-align: center;
 }
-
 h3 {
+	font-family: var(--main-font);
 	font-size: 1.2rem;
 	text-align: left;
+	line-height: 1.5;
+	color: black;
 }
-
 p, 
 input, 
 label, 
@@ -128,20 +117,17 @@ a {
 	font-size: 1rem;
 	line-height: 1.5;
 }
-
 .headline {
 	text-align: center;
 	font-size: 1.2rem;
 	font-style: italic;
 	padding-bottom: var(--medium-gap);
 }
-
 a {
 	color: var(--primary-color-dark);
     color: black;
     text-decoration: none;
 }
-
 em {
 	font-weight: 600;
 }
@@ -154,7 +140,6 @@ em {
 	border: none;
 	background-color: none;
 }
-
 .buttonLink {
 	display: flex;
 	justify-content: center;
@@ -171,13 +156,12 @@ em {
 	border-radius: var(--border-radius);
 	transition: var(--transition);
 }
-
 .buttonLink:hover {
 	background-color: var(--tertiary-color);
 	color: var(--on-primary-color);
 	transform: var(--transform);
 	box-shadow: var(--box-shadow);
-	transform: scale(1.01);
+	transform: scale(1.05);
 }
 
 /* Contact and Social Media Icons  */
@@ -185,18 +169,15 @@ em {
 .contactIcon {
 	width: 18px;
 }
-
 .contactTextLink {
 	text-decoration: none;
 	color: black;
 }
-
 .socialMedia {
 	width: 50px;
 	padding: 0 var(--small-gap) 0 var(--small-gap);
 	transition: var(--transition);
 }
-
 .socialMedia:hover {
 	transform: var(--transform);
 }
@@ -214,27 +195,22 @@ header {
 	background-color: var(--surface-variant-color);
 	transition: 1s ease-out;
 }
-
 .headerAfterScroll {
 	top: 0;
 }
-
 #logo {
-	height: 8vh;
+	height: var(--header-height);
 	padding: 1vh 0;
 }
-
 #headerMenu {
 	max-height: 0;
 	overflow: hidden;
 	transition: var(--transition);
 }
-
 #headerMenu ul {
 	padding: 0;
 	margin: 0;
 }
-
 #headerMenu ul {
 	list-style: none;
 	margin: 0;
@@ -244,11 +220,9 @@ header {
 	flex-wrap: wrap;
 	text-align: center;
 }
-
 #headerMenu ul li {
 	width: 100%;
 }
-
 .headerMenu-link {
 	display: block;
 	text-decoration: none;
@@ -258,14 +232,12 @@ header {
 	line-height: 10vh;
 	transition: var(--transition);
 }
-
 .headerMenu-link:hover{
 	background-color: var(--primary-color);
 	color: var(--on-primary-color);
 	/* font-weight: 700; */
 	/* text-decoration: underline; */
 }
-
 #hamburger {
 	position: absolute;
 	margin: auto;
@@ -280,7 +252,6 @@ header {
 	/* Shift the icon to the right with a small offset the make the tappable area to the right */
 	right: calc(var(--horizontal-padding) - 12.5px);
 }
-
 .hamburgerLine {
     background: black;
     display: block;
@@ -295,25 +266,20 @@ header {
     width: 25px;
     transition: var(--transition);
 }
-
 #hamburgerLine-1 {
 	top: var(--hamburgerLine-start-position);
 }
-
 #hamburgerLine-2 {
 	top: 0;
 	bottom: 0;
 	margin: auto;
 }
-
 #hamburgerLine-3{
 	bottom: var(--hamburgerLine-start-position);
 }
-
 #hamburger-checkbox {
     display: none;
 }
-
 #hamburger-checkbox:checked ~ #headerMenu{
     max-height: none;
     height: 90vh;
@@ -327,7 +293,6 @@ header {
     background-color: white;
 
 }
-
 #hamburger-checkbox:checked ~ #hamburger #hamburgerLine-2 {
     background: transparent;
 }
@@ -361,18 +326,38 @@ header {
     }
 }
 
+/* Floating WhatsApp Button */
+
+.floatingWhatsAppButton {
+	position: sticky;
+	left: calc(100vw - var(--horizontal-padding) - 60px);
+	bottom: var(--horizontal-padding);
+	transition: var(--transition);
+}
+.floatingWhatsAppButtonHidden{
+	/* display: none; */
+}
+.floatingWhatsAppButtonImage {
+	width: 60px;
+	border-radius: 23%;
+	padding: 0;
+	transition: var(--transition);
+}
+.floatingWhatsAppButtonImage:hover {
+	transform: var(--scale);
+	box-shadow: var(--box-shadow);
+}
+
 /* Footer  */
 
 footer {
 	text-align: center;
-	/* background-image: linear-gradient(#ede7f6,#bbb5c3); */
-    border: 1px solid black;
-
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	gap: var(--medium-gap);
+	background-color: var(--surface-variant-color);
 }
 
 #footer-contacts {
@@ -389,19 +374,16 @@ footer {
 	color: black;
 }
 
-#footerMenu {
-    flex-basis: 100%;
-}
-
 #footerMenu ul {
+	flex-basis: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0;
-	text-align: left;
+	justify-content: center;
+	gap: var(--medium-gap)
 }
 
 #footerMenu li {
-	width: 50%;
+	width: max-content;
 	list-style: none;
 }
 
@@ -606,7 +588,6 @@ h3 {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style-index.css ***!
   \******************************************************************************/
 section {
-    border: 1px solid black;
     clear: both;
 }
 
@@ -656,7 +637,6 @@ section {
     display: flex;
     gap: var(--big-gap);
 }
-
 .review {
     display: flex;
     flex-wrap: wrap;
@@ -667,12 +647,10 @@ section {
     gap: var(--medium-gap);
     transition: var(--transition);
 }
-
 .review:hover {
     transform: scale(1.01);
     box-shadow: var(--box-shadow);
 }
-
 .review-photo {
     max-width: 100px;
 }
@@ -683,24 +661,39 @@ section {
     padding-left: 0;
     padding-right: 0;
 }
-
 .feature {
     display: flex;
     align-items: center;
     gap: var(--big-gap);
     width: 100vw;
+    min-height: 50vh;
+    background-position: top;
+    background-size: cover;
 }
-
-/* .feature-imageContainer {
-    flex-basis: 20%;
-} */
-
 .feature-info {
-    padding: 0 var(--horizontal-padding);
+    height: 50vh;
+    padding: var(--big-gap);
+    gap: var(--big-gap);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    backdrop-filter: blur(2px) sepia(40%) brightness(0.7);
 }
-
-.feature:first-child {
-    background-image: url(sustainable.jpg);
+.feature-info h2 {
+    color: white;
+}
+.feature:first-of-type {
+    background-image: url(belief-1.jpg);
+}
+.feature:nth-of-type(2) {
+    background-image: url(belief-2.jpg);
+}
+.feature:nth-of-type(3) {
+    background-image: url(belief-3.jpg);
+}
+.feature:nth-of-type(4) {
+    background-image: url(belief-4.jpg);
 }
 
 /* Certifications Section */
@@ -710,13 +703,15 @@ section {
     gap: var(--medium-gap);
     justify-content: space-evenly;
 }
-
 .certification-imageContainer {
     flex-basis: 100px;
 }
-
 .certification-image {
     width: 100%;
+    transition: var(--transition);
+}
+.certification-image:hover {
+    transform: scale(1.1);
 }
 
 /* Products Showcase Section */
@@ -724,8 +719,8 @@ section {
 #productsContainer {
     display: flex;
     justify-content: space-evenly;
+    gap: var(--big-gap);
 }
-
 .product {
     max-width: 300px;
     display: flex;
@@ -733,27 +728,26 @@ section {
     align-items: start;
     flex-wrap: wrap;
     gap: var(--medium-gap);
+    background-color: var(--surface-variant-color);
+    border-radius: var(--border-radius);
+    padding: var(--medium-gap);
+    transition: var(--transition);
 }
-
+.product:hover {
+    transform: scale(1.01);
+    box-shadow: var(--box-shadow);
+}
 .product-image {
     width: 200px;
 }
-
 .product-name {
     width: 100%;
 }
-
 #productsSection-button {
-    /* position: absolute; */
-    /* right:  0; */
-    /* right: 10px; */
-    /* right: 0; */
-    /* left: 0; */
-    /* float: right; */
-    margin-top: var(--medium-gap);
+    margin-top: var(--big-gap);
     float: right;
 }
-
 #productsSection-button + p {
     clear: both;
 }
+
