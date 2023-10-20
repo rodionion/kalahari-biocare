@@ -12,7 +12,6 @@ import "../graphics/logo.png"
 // 	Header
 // 	------------------------------
 
-console.log("1234");
 
 
 class header extends HTMLElement {
@@ -53,7 +52,7 @@ class header extends HTMLElement {
 customElements.define("header-component", header);
 
 // Reveal header on scroll down
-const headerElement = document.querySelector("header");
-document.addEventListener("scroll", 
-    () => headerElement.classList.add("headerAfterScroll"), 
-    { once: true });
+// const headerElement = document.querySelector("header");
+// document.addEventListener("scroll", 
+//     () => headerElement.classList.add("headerAfterScroll"), 
+//     { once: true });

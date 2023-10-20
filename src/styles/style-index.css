@@ -64,7 +64,6 @@ section {
 }
 .review-photo {
     max-width: 100px;
-    border-radius: 50%;
 }
 
 /* Beliefs Section */
@@ -94,13 +93,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
-    backdrop-filter: blur(2px) sepia(40%) brightness(0.8);
+    /* color: white; */
+    /* backdrop-filter: blur(2px) sepia(40%) brightness(0.8); */
 }
 .feature-info h2 {
-    color: white;
+    /* color: white; */
 }
-.feature:first-of-type {
+/* .feature:first-of-type {
     background-image: url("../graphics/belief-1.jpg");
 }
 .feature:nth-of-type(2) {
@@ -112,7 +111,7 @@ section {
 .feature:nth-of-type(4) {
     background-image: url("../graphics/belief-4.jpg");
     background-position: 50%;
-}
+} */
 
 /* Certifications Section */
 

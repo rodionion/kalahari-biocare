@@ -7,7 +7,7 @@
 /* Variables  */
 
 :root {
-	--box-shadow: 2px 2px 14px rgb(56, 56, 56);
+	/* --box-shadow: 2px 2px 14px rgb(56, 56, 56); */
 
     --horizontal-padding: 7vw;
 	--vertical-padding: min(7vh, var(--big-gap));
@@ -16,10 +16,10 @@
 	--medium-gap: 16px;
 	--big-gap: 32px;
     
-	--transition: 0.2s ease-out;
-	--scale: scale(1.05);
+	/* --transition: 0.2s ease-out; */
+	/* --scale: scale(1.05); */
     
-	--border-radius: 6px;
+	--border-radius: 0px;
     
 	--hamburgerLine-start-position: 16px;
 	--hamburgerLine-end-position: 24px;
@@ -32,21 +32,21 @@
 /* Branding (colors and fonts) */
 
 :root {
-	--primary-color: #96480d;
+	--primary-color: #8d8d8d;
 	--on-primary-color: #ffffff;
-	--secondary-color: #765847;
+	--secondary-color: #bbbbbb;
 	--on-secondary-color: #ffffff;
 	--tertiary-color: #626033;
 	--on-tertiary-color: #ffffff;
 	--error-color: #ba1a1a;
 	--on-error-color: #ffffff;
-	--background-color: #fffbff;
+	--background-color: #ffffff;
 	--on-background-color: #201a17;
 	--surface-color: #fffbff;
 	--on-surface-color: #201a17;
-	--surface-variant-color: #f4ded4;
-	--main-font: "Poppins", Arial, Helvetica, sans-serif;
-	--accent-font: "Forum", Arial, Helvetica, sans-serif;
+	--surface-variant-color: #ffffff;
+	--main-font: Arial;
+	--accent-font: Arial;
 }
 @media screen and (min-width: 768px) {
     :root {
@@ -89,12 +89,12 @@ h2 {
 	line-height: 1.5;
 }
 h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 	text-align: center;
 	font-weight: bold;
 }
 h2 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-align: center;
 }
 h3 {
@@ -182,15 +182,17 @@ em {
 /* Header  */
 
 header {
-	position: fixed;
+	position: sticky;
+	top: 0;
 	width: 100%;
-	top: calc(var(--header-height) * (-1));
+	/* top: calc(var(--header-height) * (-1)); */
 	height: var(--header-height);
 	z-index: 1;
 	padding-bottom: 0;
 	padding-top: 0;
 	background-color: var(--surface-variant-color);
 	transition: 1s ease-out;
+	border: 1px solid black;
 }
 .headerAfterScroll {
 	top: 0;
@@ -388,4 +390,8 @@ footer {
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+section {
+	border: 1px solid black;
 }
